@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pojet 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 
 
@@ -25,15 +26,52 @@
         <nav>
             <div>
                 <ul>
-                    <li><a href="#hebergements"></a>Hébergements</li>
-                    <li><a href="#activités"></a>activités</li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activités">activités</a></li>
                 </ul>
             </div>
             <div class="inscription">
-                <p><a href=""></a>S'inscrire</p>
+                <a href="">S'inscrire</a>
             </div>
         </nav>
     </header>
+
+    <!----------------------------création de la section recherche---------------------------->
+
+    <section class="recherche">
+
+        <!--le titre et sous titre-->
+        <div class="titre">
+            <h1>
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p>
+                En plein centre ville ou en pleine nature
+            </p>
+        </div>
+
+        <!--barre de recherche-->
+        <div class="input">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text">
+            <button>Rechercher</button>
+        </div>
+
+        <!--filtres-->
+        <div class="filtres">
+            <p>Filtres</p>
+            <button><i class="fas fa-money-bill-wave"></i> Economique</button>
+            <button><i class="fas fa-child"></i>Familial</button>
+            <button><i class="fas fa-heart"></i>Romantique</button>
+            <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+        </div>
+
+        <!--info-->
+        <div class="info">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </section>
 
 </body>
 
