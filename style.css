@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 body{
     padding: 0;
     margin: 0;
+    font-family: 'raleway', sans-serif;
 }
 
 /*--------------------------------------HEADER--------------------------------------*/
@@ -8,29 +11,32 @@ body{
 header{
     width: 100%;
     height: 5em;
+    display: flex;
+    justify-content: space-between;
 }
 
 header .logo{
-    float: left;
     width: 10%;
+    padding-left: 2%;
 }
 header .logo img{
     width: 100%;
-    height: 100%;
+    height: cover;
+    
 }
 
 header nav{
-    float: right;
     text-decoration: none;
     display: flex;
     justify-content: end;
-    margin-right: 10px;
+    padding-right: 2%;
 }
 header nav ul{
     list-style: none;
     display: flex;
-    
+
 }
+
 header nav ul li{
     padding: 10px;
 }
@@ -44,6 +50,7 @@ header nav ul li{
     text-decoration: none;
     box-shadow: 0px -2px 0px #0065FC;
     padding: 20px;
+    transition: 00.3s ease-in-out;
 }
 .inscription :not(:hover){
     color: #0065FC;
@@ -51,5 +58,734 @@ header nav ul li{
 }
 .inscription :hover{
     color: #0065FC;
+    transition: 00.3s ease-in-out;
 }
+
+
+/*-----------------------------------section recherche----------------------------------*/
+
+
+.recherche{
+    margin: 2%;
+}
+.recherche .titre h1{
+    font-size: 1.5em;
+}
+.recherche .titre p{
+    font-size: 1em;
+}
+.input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input #boutonGauche{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: 3px #F2F2F2 solid;
+}
+.input input{
+    height: 2.5em;
+    border: #F2F2F2 solid;
+}
+.input #boutondroit{
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    border: #0065FC solid;
+}
+.filtres{
+    display: flex;
+    align-items: center;
+}
+.cf{
+    display: flex;
+    align-items: center;
+}
+.filtres button{
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #DEEBFF;
+    border: none;
+}
+.filtres .choixfiltre{
+    margin: 10px;
+}
+.filtres p{
+    margin-right: 10px;
+}
+.filtres i{
+    color: #0065FC;
+}
+label{
+    padding: 8px 10px 10px 0px;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px #DEEBFF solid;
+    font-weight: bold;
+}
+label:hover{
+    background-color: #DEEBFF;
+    transition: 00.3s ease-in-out;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info i{
+    color: #0065FC;
+}
+.info p{
+    padding-left: 10px;
+}
+.recherche #boutondroit:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+/*-------------------------------hébergement Populaire flex------------------------------*/
+
+#hébergementetpopulaire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+/*----------------------------------section hébergement---------------------------------*/
+
+
+#hebergements{
+    width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 2%;
+}
+#hebergements .annonce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#hebergements .AnnonceHébergements{
+    width: 30%;
+    margin: 2% 0% 2% 0%;
+    background-color: white;
+    border-radius: 20px;
+}
+#hebergements .AnnonceHébergements h2{
+    font-size: 1.5em;
+}
+#hebergements .AnnonceHébergements p{
+    font-size: 1em;
+}
+#hebergements .AnnonceHébergements img{
+    width: 96%;
+    height: 15em;
+    border-radius: 20px 20px 0px 0px;
+    padding: 2% 2% 0% 2%;
+}
+#hebergements .annonce a:not(:hover){
+    text-decoration: none;
+    color: black;
+}
+#hebergements .annonce a:hover{
+    text-decoration: none;
+    color: black;
+}
+#hebergements .AnnonceHébergements:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+.infoHebergement{
+    height: auto;
+    padding: 0% 5% 5% 5%;
+}
+#hebergements .ap{
+    bottom: 5%;
+}
+.ap:hover{
+    color: #0065FC;
+    cursor: pointer;
+}
+
+/*----------------------------------section Populaire---------------------------------*/
+
+
+
+#populaires{
+    width: 25%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.titrePopulaire{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+#populaires .AnnoncePopulaires{
+    width: 90%;
+    margin: 10% 5% 10% 5%;
+    background-color: white;
+    border-radius: 20px;
+}
+#populaires .AnnoncePopulaires img{
+    width: 100%;
+    height: 15em;
+    border-radius: 20px 0px 0px 20px;
+}
+#populaires .AnnoncePopulaires a:not(:hover){
+    text-decoration: none;
+    color: black;
+}
+.photoPopulaires{
+    width: 40%;
+    padding: 2%;
+}
+#populaires a{
+    display: flex;
+}
+#populaires h2{
+    font-size: 1.5em;
+}
+#populaires a:hover{
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+#populaires a:not(:hover){
+    text-decoration: none;
+    color: black;
+}
+#populaires .AnnoncePopulaires:hover{
+    transform: scale(1.1);
+}
+.infoAnnonceEtNote{
+    position: relative;
+    width: 60%;
+}
+.note{
+    position: absolute;
+    bottom: 10%;
+}
+
+
+/*----------------------------------section Activités---------------------------------*/
+
+#activités{
+    margin: 2%;
+}
+.lieu{
+    padding: 3%;
+}
+#activités .annonceActivités{
+    display: flex;
+}
+#activités .annonceActivités img{
+    width: 100%;
+}
+#activités .annonceActivités a:not(:hover){
+    text-decoration: none;
+    color: black;
+}
+#activités a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    transition: 00.3s ease-in-out;
+}
+.activités1{
+    margin-right: 2%;
+    border-radius: 20px;
+    height: 60em;
+    box-shadow: 0.5em 0.5em #F2F2F2;
+}
+.activités1 img{
+    height: 50em;
+}
+.activitésdouble{
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 20px;
+}
+.activités2{
+    height: 28em;
+    box-shadow: 0.5em 0.5em #F2F2F2;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+.activités2 img{
+    height: 20em;
+}
+.activités3{
+    height: 30em;
+    box-shadow: 0.5em 0.5em #F2F2F2;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+.activités3 img{
+    height: 20em;
+}
+#activités img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+
+/*--------------------------------------FOOTER--------------------------------------*/
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer a:not(:hover){
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1300px) and (max-width: 1600px)
+{
+
+    /*----------------------------------section hébergement---------------------------------*/
+
+
+    #hebergements .AnnonceHébergements h2{
+        font-size: 1.2em;
+    }
+    #hebergements .AnnonceHébergements img{
+        height: 12em;
+    }
+
+
+
+    /*----------------------------------section Populaire---------------------------------*/
+
+
+
+
+
+    #populaires .AnnoncePopulaires img{
+        height: 11em;
+    }
+    #populaires h2{
+        font-size: 1.2em;
+    }
+
+
+}
+
+
+
+@media all and (min-width: 600px) and (max-width: 1300px)
+{
+
+    /*-----------------------------------section recherche----------------------------------*/
+
+    .filtres{
+        display: block;
+    }
+    .cf{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /*-------------------------------hébergement Populaire flex------------------------------*/
+
+    #hébergementetpopulaire{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    /*----------------------------------section hébergement---------------------------------*/
+
+
+    #hebergements{
+        width: 96%;
+    }
+    #hebergements .AnnonceHébergements h2{
+        font-size: 1.2em;
+    }
+    #hebergements .AnnonceHébergements p{
+        font-size: 0.9em;
+    }
+    #hebergements .AnnonceHébergements img{
+        height: 12em;
+    }
+
+    /*----------------------------------section Populaire---------------------------------*/
+
+
+
+    #populaires{
+        width: 96%;
+        margin-top: 2%;
+    }
+    #populaires .AnnoncePopulaires{
+        width: 49%;
+        margin: 2% 0%;
+    }
+    #populaires .AnnoncePopulaires img{
+        height: 10em;
+    }
+    #populaires h2{
+        font-size: 1.2em;
+    }
+    #populaires P{
+        font-size: 0.9em;
+    }
+    .a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+    /*----------------------------------section Activités---------------------------------*/
+
+    .activités1{
+        height: 26em;
+    }
+    .activités1 img{
+        height: 20em;
+    }
+    .activités2{
+        height: 12em;
+    }
+    .activités2 img{
+        height: 7em;
+    }
+    .activités3{
+        height: 12em;
+    }
+    .activités3 img{
+        height: 7em;
+    }
+    #activités h2{
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media all and (max-width: 600px)
+{
+
+    /*--------------------------------------HEADER--------------------------------------*/
+
+
+    header{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header .logo{
+        width: 30%;
+    }
+    header nav ul li{
+        padding: 0px;
+        font-size: 140%;
+        display: block;
+        justify-content: center;
+    }
+    .redirection :not(:hover){
+        box-shadow: 0px 2px 0px #F2F2F2;
+    }
+    .redirection :hover{
+        box-shadow: 0px 2px 0px #0065FC;
+    }
+    .inscription{
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        font-size: 140%;
+    }
+
+
+
+
+
+    /*-----------------------------------section recherche----------------------------------*/
+
+
+    .filtres{
+        display: block;
+    }
+    .filtres button{
+        padding: 10px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .cf{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filtres .choixfiltre{
+        margin: 10px;
+    }
+    .filtres p{
+        margin-right: 10px;
+    }
+
+    /*-------------------------------hébergement Populaire flex------------------------------*/
+
+    #hébergementetpopulaire{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*----------------------------------section hébergement---------------------------------*/
+
+
+    #hebergements{
+        width: 96%;
+        background-color: white;
+    }
+    #hebergements .AnnonceHébergements{
+        width: 96%;
+    }
+    #hebergements .ap{
+        bottom: 5%;
+    }
+
+    /*----------------------------------section Populaire---------------------------------*/
+
+
+
+    #populaires{
+        width: 96%;
+    }
+    #populaires .AnnoncePopulaires img{
+        width: 100%;
+        height: 12em;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    /*----------------------------------section Activités---------------------------------*/
+
+    #activités .annonceActivités{
+        display: block;
+    }
+    .activités1{
+        height: 28em;
+        margin-top: 4%;
+    }
+    .activités1 img{
+        height: 20em;
+    }
+    .activités2{
+        height: 28em;
+        margin-top: 4%;
+    }
+    .activités2 img{
+        height: 20em;
+    }
+    .activités3{
+        height: 30em;
+        margin-top: 4%;
+    }
+    .activités3 img{
+        height: 20em;
+    }
+
+
+    /*--------------------------------------FOOTER--------------------------------------*/
+
+    footer{
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+@media all and (max-device-width: 600px)
+{
+
+    /*--------------------------------------HEADER--------------------------------------*/
+
+
+    header{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header .logo{
+        width: 30%;
+    }
+    header nav ul li{
+        padding: 0px;
+        font-size: 100%;
+        display: block;
+        justify-content: center;
+    }
+    .redirection :not(:hover){
+        box-shadow: 0px 2px 0px #F2F2F2;
+    }
+    .redirection :hover{
+        box-shadow: 0px 2px 0px #0065FC;
+    }
+    .inscription{
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        font-size: 140%;
+    }
+
+
+
+
+
+    /*-----------------------------------section recherche----------------------------------*/
+
+
+    .filtres{
+        display: block;
+    }
+    .filtres button{
+        padding: 10px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .cf{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filtres .choixfiltre{
+        margin: 10px;
+    }
+    .filtres p{
+        margin-right: 10px;
+    }
+
+    /*-------------------------------hébergement Populaire flex------------------------------*/
+
+    #hébergementetpopulaire{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*----------------------------------section hébergement---------------------------------*/
+
+
+    #hebergements{
+        width: 96%;
+        background-color: white;
+    }
+    #hebergements .AnnonceHébergements{
+        width: 96%;
+    }
+    #hebergements .ap{
+        bottom: 5%;
+    }
+
+    /*----------------------------------section Populaire---------------------------------*/
+
+
+
+    #populaires{
+        width: 96%;
+    }
+    #populaires .AnnoncePopulaires img{
+        width: 100%;
+        height: 12em;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    /*----------------------------------section Activités---------------------------------*/
+
+    #activités .annonceActivités{
+        display: block;
+    }
+    .activités1{
+        height: 28em;
+        margin-top: 4%;
+    }
+    .activités1 img{
+        height: 20em;
+    }
+    .activités2{
+        height: 28em;
+        margin-top: 4%;
+    }
+    .activités2 img{
+        height: 20em;
+    }
+    .activités3{
+        height: 30em;
+        margin-top: 4%;
+    }
+    .activités3 img{
+        height: 20em;
+    }
+
+
+    /*--------------------------------------FOOTER--------------------------------------*/
+
+    footer{
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
