@@ -7,12 +7,14 @@
     <title>Pojet 2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
 </head>
 
 
 <body>
     
-    <!----------------------------------création de l'header---------------------------------->
+    <!--création de l'header-->
 
     <header>
 
@@ -27,13 +29,13 @@
         <nav>
             <ul>
                 <li class="redirection"><a href="#hebergements">Hébergements</a></li>
-                <li class="redirection"><a href="#activités">activités</a></li>
+                <li class="redirection"><a href="#activités">Activités</a></li>
                 <li class="inscription"><a href="">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
 
-    <!----------------------------création de la section recherche---------------------------->
+    <!--création de la section recherche-->
 
     <section class="recherche">
 
@@ -49,18 +51,31 @@
 
         <!--barre de recherche-->
         <div class="input">
-            <i class="fas fa-map-marker-alt"></i>
+            <button id="boutonGauche"><i class="fas fa-map-marker-alt"></i></button>
             <input type="text">
-            <button>Rechercher</button>
+            <button id="boutondroit">Rechercher</button>
         </div>
 
         <!--filtres-->
         <div class="filtres">
             <p>Filtres</p>
-            <button><i class="fas fa-money-bill-wave"></i> Economique</button>
-            <button><i class="fas fa-child"></i>Familial</button>
-            <button><i class="fas fa-heart"></i>Romantique</button>
-            <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+            <div class="cf">
+                <div class="choixfiltre">
+                    <label class="choixfiltre"><button><i class="fas fa-money-bill-wave"></i> </button> Economique</label>
+                </div>
+
+                <div class="choixfiltre">
+                    <label><button><i class="fas fa-child"></i></button> Familial</label>
+                </div>
+            
+                <div class="choixfiltre">
+                    <label><button><i class="fas fa-heart"></i></button> Romantique</label>
+                </div>
+            
+                <div class="choixfiltre">
+                    <label><button><i class="fas fa-dog"></i></button> Animaux autorisés</label>
+                </div>
+            </div>
         </div>
 
         <!--info-->
@@ -70,252 +85,277 @@
         </div>
     </section>
 
-    <!---------------------------création de la section hébergement--------------------------->
+    <!--création de la section hébergement-->
 
+    <div id="hébergementetpopulaire">
     <section id="hebergements">
 
         <h1>Hébergements à Marseille</h1>
 
-        <!--Auberge la Cannebière-->
-        <div class="AnnonceHébergements">
+        <div class="annonce">
+            <!--Auberge la Cannebière-->
+            <div class="AnnonceHébergements">
 
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Auberge la Cannebière</h2>
-                <p>Nuit à partir de <strong>25€</strong></p>
-    
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </a>
-        </div>
+                    <div class="infoHebergement">
+                        <h2>Auberge la Cannebière</h2>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
         
-        <!--Hôtel du port-->
-        <div class="AnnonceHébergements">
+            <!--Hôtel du port-->
+            <div class="AnnonceHébergements">
 
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Hôtel du port</h2>
-                <p>Nuit à partir de <strong>52€</strong></p>
+                    <div class="infoHebergement">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de <strong>52€</strong></p>
     
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                </div>
-            </a>
-        </div>
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
 
-        <!--Hôtel Les mouettes-->
-        <div class="AnnonceHébergements">
+            <!--Hôtel Les mouettes-->
+            <div class="AnnonceHébergements">
 
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Hôtel Les mouettes</h2>
-                <p>Nuit à partir de <strong>76€</strong></p>
+                    <div class="infoHebergement">
+                        <h2>Hôtel Les mouettes</h2>
+                        <p>Nuit à partir de <strong>76€</strong></p>
     
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </a>
-        </div>
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
 
-        <!--Hôtel de la mer-->
-        <div class="AnnonceHébergements">
+            <!--Hôtel de la mer-->
+            <div class="AnnonceHébergements">
             
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Hôtel de la mer</h2>
-                <p>Nuit à partir de <strong>46€</strong></p>
+                    <div class="infoHebergement">
+                        <h2>Hôtel de la mer</h2>
+                        <p>Nuit à partir de <strong>46€</strong></p>
                 
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </a>
-        </div>
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
 
-        <!--Auberge Le Panier-->
-        <div class="AnnonceHébergements">
+            <!--Auberge Le Panier-->
+            <div class="AnnonceHébergements">
             
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Auberge Le Panier</h2>
-                <p>Nuit à partir de <strong>23€</strong></p>
+                    <div class="infoHebergement">
+                        <h2>Auberge Le Panier</h2>
+                        <p>Nuit à partir de <strong>23€</strong></p>
                 
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </a>
-        </div>
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
 
-        <!--Hôtel chez Amina-->
-        <div class="AnnonceHébergements">
+            <!--Hôtel chez Amina-->
+            <div class="AnnonceHébergements">
 
-            <a href="">
-                <div class="photoHébergements">
-                    <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
-                </div>
+                <a href="">
+                    <div class="photoHébergements">
+                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                    </div>
     
-                <h2>Hôtel chez Amina</h2>
-                <p>Nuit à partir de <strong>96€</strong></p>
+                    <div class="infoHebergement">
+                        <h2>Hôtel chez Amina</h2>
+                        <p>Nuit à partir de <strong>96€</strong></p>
                 
-                <div class="note">
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                    <i class="fas fa-star" style= "color: #0065FC"></i>
-                </div>
-            </a>
+                        <div>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
         </div>
 
         <!--afficher plus-->
-        <p><strong>Afficher plus</strong></p>
+        <p class="ap"><strong>Afficher plus</strong></p>
     </section>
 
-    <!----------------------------création de la section populaire---------------------------->
+    <!--création de la section populaire-->
 
     <section id="populaires">
 
         <!--titre de section-->
         <div>
-            <h1>
+            <h1 class="titrePopulaire">
                 Les plus populaires
+                <i class="fas fa-chart-line"></i>
             </h1>
-            <i class="fas fa-chart-line"></i>
+            
         </div>
 
         <!--les annonce populaire-->
         <!--Hotel Le soleil du matiin-->
-        <div class="AnnoncePopulaires">
+        <div class="a">
+            <div class="AnnoncePopulaires">
 
-            <a href="">
-                <!--photo-->
-                <div class="photoPopulaires">
-                    <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-                </div>
-
-                <!--info-->
-                <div class="infoAnnonceEtNote">
-                    <div class="infoAnnonce">
-                        <h2>
-                            Hotel Le soleil du matiin
-                        </h2>
-                        <p>Nuit à partir de 128€</p>
+                <a href="">
+                    <!--photo-->
+                    <div class="photoPopulaires">
+                        <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                     </div>
 
-                    <div class="note">
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
+                    <!--info-->
+                    <div class="infoAnnonceEtNote">
+                        <div class="infoAnnonce">
+                            <h2>
+                                Hotel Le soleil du matin
+                            </h2>
+                            <p>Nuit à partir de 128€</p>
+                        </div>
+
+                        <div class="note">
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-        </div>
+            </div>
 
-        <!--Au coeur de l'eau Chambres d'hôtes-->
-        <div class="AnnoncePopulaires">
+            <!--Au coeur de l'eau Chambres d'hôtes-->
+            <div class="AnnoncePopulaires">
 
-            <a href="">
-                <!--photo-->
-                <div class="photoPopulaires">
-                    <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-                </div>
-
-                <!--info-->
-                <div class="infoAnnonceEtNote">
-                    <div class="infoAnnonce">
-                        <h2>
-                            Au coeur de l'eau Chambres d'hôtes
-                        </h2>
-                        <p>Nuit à partir de 71€</p>
-                    </div>
-
-                    <div class="note">
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-        <!--Hôtel Tout bleu et Blanc-->
-        <div class="AnnoncePopulaires">
-
-            <a href="">
-                <!--photo-->
-                <div class="photoPopulaires">
-                    <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
-                </div>
-
-                <!--info-->
-                <div class="infoAnnonceEtNote">
-                    <div class="infoAnnonce">
-                        <h2>
-                            Hôtel Tout bleu et Blanc
-                        </h2>
-                        <p>Nuit à partir de 68€</p>
+                <a href="">
+                    <!--photo-->
+                    <div class="photoPopulaires">
+                        <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                     </div>
 
-                    <div class="note">
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star" style= "color: #0065FC"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </a>
+                    <!--info-->
+                    <div class="infoAnnonceEtNote">
+                        <div class="infoAnnonce">
+                            <h2>
+                                Au coeur de l'eau Chambres d'hôtes
+                            </h2>
+                            <p>Nuit à partir de 71€</p>
+                        </div>
 
+                        <div class="note">
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!--Hôtel Tout bleu et Blanc-->
+            <div class="AnnoncePopulaires">
+
+                <a href="">
+                    <!--photo-->
+                    <div class="photoPopulaires">
+                        <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                    </div>
+
+                    <!--info-->
+                    <div class="infoAnnonceEtNote">
+                        <div class="infoAnnonce">
+                            <h2>
+                                Hôtel Tout bleu et Blanc
+                            </h2>
+                            <p>Nuit à partir de 68€</p>
+                        </div>
+
+                        <div class="note">
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star" style= "color: #0065FC"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
         </div>
     </section>
+    </div>
 
 
-    <!----------------------------création de la section Activités---------------------------->
+    <!--création de la section Activités-->
 
     <section id="activités">
         
-        <h1>activités à Marseille</h1>
+        <h1>Activités à Marseille</h1>
 
         <div class="annonceActivités">
 
@@ -332,7 +372,7 @@
                 </div>
             </a>
 
-            <div class="activités2et3">
+            <div class="activitésdouble">
 
                 <a href="">
                     <div class="activités2">
@@ -363,7 +403,7 @@
             </div>
 
             <a href="">
-                <div class="activités4">
+                <div class="activités1">
                     <div class="photoActivités">
                         <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                     </div>
@@ -375,10 +415,10 @@
                 </div>
             </a>
 
-            <div class="activités5et6">
+            <div class="activitésdouble">
 
                 <a href="">
-                    <div class="activités5">
+                    <div class="activités2">
                         <div class="photoActivités">
                             <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                         </div>
@@ -391,7 +431,7 @@
                 </a>
 
                 <a href="">
-                    <div class="activités6">
+                    <div class="activités3">
                         <div class="photoActivités">
                             <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                         </div>
@@ -409,47 +449,38 @@
     </section>
 
 
-    <!----------------------------------création du footer---------------------------------->
+    <!--création du footer-->
 
     <footer>
         <div class="apropos">
-            <div class="nomcategorie">
-                <p><strong>A propos</strong></p>
-            </div>
-
-            <div class="liste">
-                <ul>
-                    <li><a href="">Fonctionnement du site</a></li>
-                    <li><a href="">Conditions générales de vente</a></li>
-                    <li><a href="">Données et confidentialité</a></li>
-                </ul>
-            </div>
+            
+            <ul>
+                <li><p><strong>A propos</strong></p></li>
+                <li><a href="">Fonctionnement du site</a></li>
+                <li><a href="">Conditions générales de vente</a></li>
+                <li><a href="">Données et confidentialité</a></li>
+            </ul>
+            
         </div>
 
         <div class="noshébergements">
-            <div class="nomcategorie">
-                <p><strong>Nos Hébergements</strong></p>
-            </div>
 
-            <div class="liste">
-                <ul>
-                    <li><a href="">Charte qualité</a></li>
-                    <li><a href="">Soumettre votre hôtel</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><p><strong>Nos Hébergements</strong></p></li>
+                <li><a href="">Charte qualité</a></li>
+                <li><a href="">Soumettre votre hôtel</a></li>
+            </ul>
+ 
         </div>
 
         <div class="assistance">
-            <div class="nomcategorie">
-                <p><strong>assistance</strong></p>
-            </div>
 
-            <div class="liste">
-                <ul>
-                    <li><a href="">Centre d aide</a></li>
-                    <li><a href="">Nous contacter</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><p><strong>Assistance</strong></p></li>
+                <li><a href="">Centre d aide</a></li>
+                <li><a href="">Nous contacter</a></li>
+            </ul>
+
         </div>
     </footer>
 
