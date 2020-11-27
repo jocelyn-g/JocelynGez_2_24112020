@@ -190,6 +190,7 @@ label:hover{
     height: 15em;
     border-radius: 20px 20px 0px 0px;
     padding: 2% 2% 0% 2%;
+    object-fit: cover;
 }
 #hebergements .annonce a:not(:hover){
     text-decoration: none;
@@ -241,6 +242,7 @@ label:hover{
     width: 100%;
     height: 15em;
     border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
 }
 #populaires .AnnoncePopulaires a:not(:hover){
     text-decoration: none;
@@ -291,6 +293,7 @@ label:hover{
 }
 #activités .annonceActivités img{
     width: 100%;
+    object-fit: cover;
 }
 #activités .annonceActivités a:not(:hover){
     text-decoration: none;
@@ -310,6 +313,7 @@ label:hover{
 }
 .activités1 img{
     height: 50em;
+    object-fit: cover;
 }
 .activitésdouble{
     margin-left: 2%;
@@ -324,6 +328,7 @@ label:hover{
 }
 .activités2 img{
     height: 20em;
+    object-fit: cover;
 }
 .activités3{
     height: 30em;
@@ -333,6 +338,7 @@ label:hover{
 }
 .activités3 img{
     height: 20em;
+    object-fit: cover;
 }
 #activités img{
     border-radius: 20px 20px 0px 0px;
